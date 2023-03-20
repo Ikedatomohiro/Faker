@@ -10,6 +10,16 @@ use Faker\Test\TestCase;
  */
 final class InternetTest extends TestCase
 {
+    public function testLastNameAscii(): void
+    {
+        self::assertEquals('nakajima', $this->faker->lastNameAscii);
+    }
+
+    public function testFirstNameAscii(): void
+    {
+        self::assertEquals('hanako', $this->faker->firstNameAscii);
+    }
+
     public function testUserName(): void
     {
         self::assertEquals('akira72', $this->faker->userName);
